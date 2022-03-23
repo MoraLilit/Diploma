@@ -1,0 +1,213 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Subjects</title>
+    <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'css/Subjects.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/subjects.js' %}" defer=""></script>
+      <meta name="generator" content="Nicepage 4.0.3, nicepage.com">
+    <link rel="icon" href="{% static 'images/favicon.jpeg' %}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Quantum",
+		"logo": {% static 'images/default-logo.png' %}
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Subjects">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-29e4" onload="onLoad('{{ subject1.title }}', '{{ subject1.description }}', '{{ theories }}')"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="XL" data-submenu-level="with-reload">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0; font-weight: 500;">
+            <a class="u-button-style u-custom-active-color u-custom-border u-custom-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-active-grey-5 u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'subjects' %}" style="padding: 10px 26px;">Subjects</a>
+
+</li><li class="u-nav-item"><a class="u-active-grey-5 u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'groups' %}" style="padding: 10px 26px;">Groups</a>
+</li><li class="u-nav-item"><a class="u-active-grey-5 u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'theory' %}" style="padding: 10px 26px;">Theory</a>
+</li><li class="u-nav-item"><a class="u-active-grey-5 u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'profile' %}" style="padding: 10px 26px;">Profile</a>
+</li><li class="u-nav-item"><a class="u-active-grey-5 u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'practice' %}" style="padding: 10px 26px;">Practice</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-spacing-0 u-unstyled u-nav-5">
+                    <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'subjects' %}" style="padding: 10px 26px;">Subjects</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'groups' %}" style="padding: 10px 26px;">Groups</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'theory' %}" style="padding: 10px 26px;">Theory</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'profile' %}" style="padding: 10px 26px;">Profile</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'practice' %}" style="padding: 10px 26px;">Practice</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-75"></div>
+          </div>
+        </nav>
+        <h2 class="u-text u-text-1">Subjects</h2>
+        <a href="{% url 'profile' %}" class="u-image u-logo u-image-1">
+          <img src="{% static 'images/default-logo.png' %}" class="u-logo-image u-logo-image-1">
+        </a>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-75ec">
+      <div class="u-clearfix u-sheet u-sheet-1">
+          <!--TODO subject drop-list-->
+        <p id="subjects">Choose subject</p>
+            <div class="select">
+              <select id="standard-select" onchange="ShowContentSubject('{{ theories }}')">
+                <option value="empty"></option>
+                  {% for sub in subject %}
+                    <option value="{{ sub.description }}">{{sub.title}}</option>
+                  {% endfor %}
+              </select>
+              <span class="focus"></span>
+            </div>
+          <div class="u-expanded-width u-tab-links-align-justify u-tabs u-tabs-1">
+          <ul class="u-spacing-30 u-tab-list u-unstyled" role="tablist">
+            <li class="u-tab-item" role="presentation">
+              <a class="active u-active-palette-2-base u-button-style u-tab-link u-tab-link-1" id="link-tab-081f" href="#tab-081f" role="tab" aria-controls="tab-081f" aria-selected="true">Info</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-2-base u-button-style u-tab-link u-tab-link-2" id="link-tab-4d57" href="#tab-4d57" role="tab" aria-controls="tab-4d57" aria-selected="false">Theory</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-2-base u-button-style u-tab-link u-tab-link-2" id="link-tab-4d58" href="#tab-4d58" role="tab" aria-controls="tab-4d58" aria-selected="false">Task</a>
+            </li>
+          </ul>
+          <div class="u-tab-content">
+            <div class="u-container-style u-tab-active u-tab-pane" id="tab-081f" role="tabpanel" aria-labelledby="link-tab-081f">
+              <div class="u-container-layout u-container-layout-1">
+                  <!--TODO first tab-->
+                  <form method="post" action="update_subject/">
+                      <div class="container-title">
+                          <p class="u-text u-text-1">Title</p>
+                          <i class="fa fa-pencil icon-1"></i>
+                          <p class="u-title-1" id="title">{{ subject.title }}</p><input type="hidden" name="subject-title" id="subject-title"/>
+                      </div>
+                      <div class="container-description">
+                          <p class="u-text u-text-2">Description</p>
+                          <i class="fa fa-pencil icon-2"></i>
+                          <p class="u-description-1" id="description">{{ subject.description }}</p><input type="hidden" name="subject-description" id="subject-description"/>
+                      </div>
+                      <div class="container-button">
+                          <input type="submit" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1" value="Save">
+                          <a class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2" onclick="editSubject()">Edit</a>
+                      </div>
+                  </form>
+              </div>
+            </div>
+            <div class="u-container-style u-tab-pane" id="tab-4d57" role="tabpanel" aria-labelledby="link-tab-4d57">
+              <div class="u-container-layout u-container-layout-2">
+                  <!--TODO second tab-->
+                  <div class="u-table u-table-responsive u-table-1">
+                      <table class="u-table-entity" id="table">
+                        <colgroup>
+                          <col width="50%">
+                          <col width="20%">
+                          <col width="20%">
+                          <col width="10%">
+                        </colgroup>
+                        <thead class="u-black u-table-header u-table-header-1">
+                          <tr style="height: 10px;">
+                            <th class="u-border-1 u-border-black u-table-cell">Theory Title</th>
+                            <th class="u-border-1 u-border-black u-table-cell">Upload Date</th>
+                            <th class="u-border-1 u-border-black u-table-cell">Assigned groups</th>
+                            <th class="u-border-1 u-border-black u-table-cell"></th>
+                          </tr>
+                        </thead>
+                        <form method="post" action="load_selected_theory/">
+                            <tbody class="u-table-body">
+                            {% for theory in theories %}
+                                <tr style="height: 10px;" id="tr">
+                                    {% csrf_token %}
+                                    <td class="u-border-1 u-border-grey-30 u-table-cell" id="theory-title"><input type="hidden" name="theory-title" value="{{ theory.title }}">{{ theory.title }}</td>
+                                    <td class="u-border-1 u-border-grey-30 u-table-cell">{{ theory.upload_date }}</td>
+                                    <td class="u-border-1 u-border-grey-30 u-table-cell">{{ theory.assigned_groups.title  }}</td>
+                                    <td class="u-border-1 u-border-grey-30 u-table-cell"><button type="submit" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50">Open</button></td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                        </form>
+                      </table>
+                     </div>
+                  <form method="post" action="add_new_theory/">
+                      <input type="submit" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3" value="Add new">
+                  </form>
+
+              </div>
+            </div>
+            <div class="u-container-style u-tab-pane" id="tab-4d58" role="tabpanel" aria-labelledby="link-tab-4d58">
+              <div class="u-container-layout u-container-layout-2">
+                  <!--TODO third tab-->
+                  <div class="u-table u-table-responsive u-table-1">
+                      <table class="u-table-entity" id="table">
+                        <colgroup>
+                          <col width="50%">
+                          <col width="20%">
+                          <col width="20%">
+                          <col width="10%">
+                        </colgroup>
+                        <thead class="u-black u-table-header u-table-header-1">
+                          <tr style="height: 10px;">
+                            <th class="u-border-1 u-border-black u-table-cell">Task Title</th>
+                            <th class="u-border-1 u-border-black u-table-cell">Due Date</th>
+                            <th class="u-border-1 u-border-black u-table-cell">Grade</th>
+                            <th class="u-border-1 u-border-black u-table-cell"></th>
+                          </tr>
+                        </thead>
+                        <form method="post" action="load_selected_task/">
+                            <tbody class="u-table-body">
+                            {% for task in tasks %}
+                                <tr style="height: 10px;" id="tr">
+                                    {% csrf_token %}
+                                    <td class="u-border-1 u-border-grey-30 u-table-cell" id="theory-title"><input type="hidden" name="task-title" value="{{ task.name }}">{{ task.name }}</td>
+                                    <td class="u-border-1 u-border-grey-30 u-table-cell">{{ task.due_data }}</td>
+                                    <td class="u-border-1 u-border-grey-30 u-table-cell">{{ task.grade  }}</td>
+                                    <td class="u-border-1 u-border-grey-30 u-table-cell"><button type="submit" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50">Open</button></td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                        </form>
+                      </table>
+                     </div>
+                  <form method="post" action="add_new_task/">
+                      <input type="submit" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3" value="Add new">
+                  </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-a94e"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1"></p>
+      </div></footer>
+  </body>
+</html>

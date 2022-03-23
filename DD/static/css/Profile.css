@@ -1,0 +1,45 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 500px;
+  width: 400px;
+  float: left;
+  margin-left: 80px;
+}
+
+.u-section-1 .u-sheet-2 {
+  min-height: 500px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 285px;
+  height: 285px;
+  margin: 14px auto 60px 20px;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  margin: 15px auto 0 73px;
+}
+
+.u-section-1 .u-btn-2 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  margin: -55px auto 0 13px;
+  width: 301px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-btn-1 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-left: 0;
+  }
+}

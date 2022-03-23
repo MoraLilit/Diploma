@@ -1,0 +1,18 @@
+{% load socialaccount %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script class="u-script" type="text/javascript" src="{% static 'js/login.js' %}" defer=""></script>
+</head>
+<body>
+<h1 style="text-align: center;">Welcome somewhere</h1>
+<h3 style="text-align: center;">Sign in to your Google Account, please</h3>
+<h4 style="text-align: center;"><a href="{% provider_login_url 'google' %}">Sign in</a></h4>
+<h4 style="text-align: center;">Email <input type="text" id="email"></h4>
+<h4 style="text-align: center;">Password <input type="password" id="password"></h4>
+<h4 style="text-align: center;">Password <input type="button" id="login" onclick="Login()">Login</h4>
+
+</body>
+</html>
